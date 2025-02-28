@@ -15,7 +15,7 @@
             <div class="flex ">
                 <img class="w-10" src="assets/Group.png" alt="">
                 <div class="mx-3">
-                    <h1 class="text-2xl font-bold">$ 45000</h1>
+                    <h1 class="text-2xl font-bold">$ <span id="balance">4500</span></h1>
                     <p>Available balance </p>
                 </div>
                
@@ -77,17 +77,17 @@
                 <fieldset class="fieldset">
                   <label class="fieldset-label font-bold text-black">Mobaile Number</label>
                   <input value="01715940763" id="Acount-namber" type="Number" class="input bg-stone-200 rounded-full" placeholder="Enter your number" required />
-                  <label class="fieldset-label font-bold text-black">Amount to add</label>
-                  <input  type="text" class="input  bg-stone-200 rounded-full" placeholder="Add Amount to withdraw" required />
+                  <label class="fieldset-label font-bold text-black" >Amount to add</label>
+                  <input  type="text" id="amount" class="input  bg-stone-200 rounded-full" placeholder="Add Amount to withdraw" required />
                   <label class="fieldset-label font-bold text-black">4 digit pin</label>
                   <input value="1234" id="pin-namber" type="text" class="input  bg-stone-200 rounded-full" placeholder="Enter your pin" required />
-                  <button class="btn btn-neutral mt-4 bg-blue-600 rounded-full" id="btn-login" >Login</button>
+                  <button class="btn btn-neutral mt-4 bg-blue-600 rounded-full" id="btn-add" >Add Money</button>
                 </fieldset>
               </form>
         </section>
 
     </section>
     
-    
+  <script src="./script/addmoney.js"></script>  
 </body>
 </html>
