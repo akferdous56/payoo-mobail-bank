@@ -36,36 +36,36 @@
         
         </section>
 
-        <section class="mt-6 grid grid-cols-3 grid-rows-2 mx-4 gap-4 cursor-pointer ">
-            <div class=" p-4 shadow rounded-xl">
+        <section class="mt-6 grid grid-cols-3 grid-rows-2 mx-4 gap-4 cursor-pointer   ">
+            <div class=" p-4 shadow rounded-xl hover:bg-lime-200" id="add-money">
                 <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                 <p class="text-center">Add Money</p>
             </div>
-            <div class=" p-4 shadow rounded-xl">
+            <div class=" p-4 shadow rounded-xl hover:bg-lime-200" id="cash-money">
                 <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                 <p class="text-center">Cashout</p>
             </div>
-            <div class=" p-4 shadow rounded-xl">
+            <div class=" p-4 shadow rounded-xl hover:bg-lime-200">
                 <img class="w-8 mx-auto" src="assets/money1.png" alt="">
                 <p class="text-center">Transfer Money</p>
             </div>
-            <div class=" pl-4 shadow rounded-xl">
+            <div class=" p-4 shadow rounded-xl hover:bg-lime-200">
                 <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
                 <p class="text-center">Get bonus</p>
             </div>
-            <div class=" p-4 shadow rounded-xl">
+            <div class=" p-4 shadow rounded-xl hover:bg-lime-200">
                 <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
                 <p class="text-center">Paybill</p>
             </div>
-            <div class=" p-4 shadow rounded-xl">
+            <div class=" p-4 shadow rounded-xl hover:bg-lime-200">
                 <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
                 <p class="text-center">Transactions</p>
             </div>
             
             
         </section>
-        <section class="bg-slate-300 mt-10 p-4 ">
-            <p>Add Money</p>
+        <section class=" mt-10 p-4 " id="add-box">
+            <p class="mx-4 text-3xl font-bold">Add Money</p>
             <form class="card-body bg-white rounded-xl mt-10">
                <label class="font-bold">Select a bank</label>
                 <select class="select">
@@ -86,8 +86,26 @@
               </form>
         </section>
 
+
+        <!-- cash out -->
+
+        <section class="p-6" id="cash-box">
+            <h1 class="text-3xl font-bold">Cashout</h1>
+            <fieldset class="fieldset mt-6">
+                <label class="fieldset-label font-bold text-black">Mobaile Number</label>
+                <input value="01715940763" id="Acount-namber" type="Number" class="input bg-stone-200 rounded-full" placeholder="Enter your number" required />
+                <label class="fieldset-label font-bold text-black" >Amount to add</label>
+                <input  type="text" id="cash-amount" class="input  bg-stone-200 rounded-full" placeholder="Add Amount to withdraw" required />
+                <label class="fieldset-label font-bold text-black">4 digit pin</label>
+                <input value="1234" id="pin-namber" type="text" class="input  bg-stone-200 rounded-full" placeholder="Enter your pin" required />
+                <button class="btn btn-neutral mt-4 bg-blue-600 rounded-full" id="btn-out" >Cashout</button>
+              </fieldset>
+        </section>
+
     </section>
     
   <script src="./script/addmoney.js"></script>  
+  <script src="script/toggule.js"></script>
+  <script src="script/cashout.js"></script>
 </body>
 </html>
